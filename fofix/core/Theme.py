@@ -1126,6 +1126,7 @@ class Setlist:
                 lfont.render(text, (self.song_list_xpos+.05, .0925*(n+1)+.0125), scale=scale)
 
                 score = _("Nil")
+                notesTotal = 0
                 stars = 0
                 name = ""
 
@@ -1309,6 +1310,7 @@ class Setlist:
 
             if isinstance(item, Song.SongInfo):
                 score = _("Nil")
+                notesTotal = 0
                 stars = 0
                 name = ""
                 if not item.getLocked():
@@ -1437,6 +1439,7 @@ class Setlist:
                 lfont.render(text, (self.song_list_xpos+.05, .0925*(n+1)+.0125), scale=scale)
 
                 score = _("Nil")
+                notesTotal = 0
                 stars = 0
                 name = ""
 
@@ -1703,6 +1706,7 @@ class Setlist:
 
             if isinstance(item, Song.SongInfo):
                 score = _("Nil")
+                notesTotal = 0
                 stars = 0
                 name = ""
                 if not item.getLocked():
